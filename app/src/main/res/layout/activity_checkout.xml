@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="15dp"
+    tools:context=".CheckoutActivity">
+
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Checkout"
+        android:textAlignment="center"
+        android:textColor="@color/TextColorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="text"
+        android:textColor="@color/TextColorPrimary"
+        android:textColorHint="@color/TextColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleName"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter your Email ID"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/TextColorPrimary"
+        android:textColorHint="@color/TextColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        app:layout_constraintVertical_bias="0.041"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter your Phone number"
+        android:inputType="phone"
+        android:textColor="@color/TextColorPrimary"
+        android:textColorHint="@color/TextColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        app:layout_constraintVertical_bias="0.07"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/edtCreditCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter credit card number"
+        android:inputType="number"
+        android:textColor="@color/TextColorPrimary"
+        android:textColorHint="@color/TextColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhone"
+        app:layout_constraintVertical_bias="0.092"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+    <EditText
+        android:id="@+id/edtCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter CVV "
+        android:inputType="number"
+        android:textColor="@color/TextColorPrimary"
+        android:textColorHint="@color/TextColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCreditCard"
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/TextColorSecondary"
+        android:onClick="mail"
+        android:textColor="@color/TextColorPrimary"
+        android:textColorHint="@color/TextColorPrimary"
+        android:text="Pay"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCVV"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="51dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

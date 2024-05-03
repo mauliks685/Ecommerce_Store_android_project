@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "240484107882",
+    "project_id": "ecommerce-store-6cfbb",
+    "storage_bucket": "ecommerce-store-6cfbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240484107882:android:a7c721e17ccdad6e59ec13",
+        "android_client_info": {
+          "package_name": "com.maulik_shah.ecommercestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240484107882-1rvppu93cri5tf9elhkl2pfulvv7tff7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn6EoTdCNzQ_DwmKVlPFqGXAHo9nU5Fuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240484107882-1rvppu93cri5tf9elhkl2pfulvv7tff7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
